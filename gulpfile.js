@@ -15,7 +15,7 @@ let browser = require('gulp-browser');
 let OUTPUT_DIRECTORY = 'OT-public';
 
 gulp.task('html', function () {
-    return gulp.src('index.html')
+    return gulp.src('OTindex.html')
         .pipe(gulp.dest('OT-public'));
 });
 
@@ -26,7 +26,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('js/app.js')
+    return gulp.src('js/OTapp.js')
         .pipe(browser.browserify())
         .pipe(gulp.dest('OT-public'));
 });
